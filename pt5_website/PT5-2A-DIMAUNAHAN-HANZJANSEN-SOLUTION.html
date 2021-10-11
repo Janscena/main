@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!--Title tag-->
+	<title>Performance Task 5</title>
+
+		<!--meta tags-->
+		<meta charset="utf-8">
+		<meta name="author" content="Hanz Jansen A. Dimaunahan">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<!--
+
+			style tag for the webpage CSS
+			
+		-->
+		<style>
+
+			/*universal selector*/
+			* {
+				margin: 0;
+				box-sizing: border-box;
+			}
+
+			/*class selector for adjusting the width of the div tag*/
+			.wrapper {
+				width: 80rem;
+				margin: 0 auto;
+			}
+
+			/*element selector wherein the header is fixed with the position style. That way, it will stay at the top while scrolling up and down*/
+			header {
+				background-color: black;
+				color: #f6f7f3;
+				font-family: arial;
+				position: fixed;
+				width: 100%;
+				padding-top: 11px;
+				padding-bottom: 11px;
+				z-index: 12;
+			}
+
+			/*class selector for the Janscena's Webpage name of the header positioned at the left most part of the header*/
+			.logo {
+				width: 30%;
+				float: left;
+				line-height: 100px;
+
+			}
+
+			/*class selector with inline element for the font styles of the text*/
+			.logo a {
+				text-decoration: none;
+				font-size: 40px;
+				font-family: consolas;
+				color: #fff;
+			}
+
+			/*element selector for the <nav> tag positioned at the right*/	
+			nav {
+				float: right;
+				line-height: 100px;
+			}
+
+			/*element selector for the font styles of the <a> tag*/
+			nav a {
+				text-decoration: none;
+				font-size: 18px;
+				margin: 0 15px;
+				color: #fff;
+			}
+
+			nav a:hover {
+				border-radius: 5px;
+				background-color: white;
+				color: black;
+			}
+
+			/*class selector for the footer*/
+			.foot {
+				background-color: black;
+				color: #f6f7f3;
+				font-family: consolas; 
+				padding-top: 20px;
+				padding-bottom: 20px;
+				text-align: center;
+			}
+
+			/*class selector for the background picture of the webpage at fixed position*/
+			.topbg {
+				position:fixed;
+				width:100%;
+			}
+
+			/*class selector for the content of the webpage inside of a <div> tag positioned with relative. Since the bacground picture of the webpage is fixed, the content will at the back side of the bg. So we use the relative position style to make the content appear*/
+			.content {
+				margin-top: 30px;
+				position:relative;
+			}
+
+			/*class selector with specific element*/
+			.toptext h1{
+				font-size: 170px;
+				color: white;
+				text-align: center;
+				padding-top: 100px;
+			}
+
+			/*class selector with specific element*/
+			.toptext h6{
+				font-size: 30px;
+				font-family: agency fb;
+				color: white;
+				text-align: center;
+				padding-top: 100px;
+				padding: 120px;
+				letter-spacing: 4px;
+			}
+
+			/*class selector with specific element*/
+			.toptext p{
+				font-size: 50px;
+				text-align: center;
+				color: white;
+				padding: 100px;
+				padding-bottom: 250px;
+				font-family: helvetica; 
+
+			}
+
+			/*class selector <div> tag portion for grouping purposes with white background color*/
+			.portion {
+				background-color: white;
+			}
+
+			/*class selector for the main parts of the webpage*/
+			.text {
+				font-size: 50px;
+				font-family: consolas;
+				text-align: center;
+				padding: 100px;
+				background-color: white;
+				margin: 0;
+			}
+
+			/*class selector for making the pictures align with each other. with the use of the float left style, the pictures are not stacked with each other*/
+			.collumn {
+				float: left;
+				width: 33.33%;
+			}
+
+			/*class selector*/
+			.row::after {
+				content: "";
+				display: table;
+				clear: both;
+			}
+
+			/*class selector for the picture part of the portion positioned left*/
+			.y4 {
+				float: left;
+				width:50%;
+
+			}
+
+			/*class selector for the next picture part of the portion positioned right*/
+			.y5 {
+				float: right;
+				width:50%;
+
+			}
+
+			/*class selector for the text styles*/
+			.text1 {
+				float: left;
+				padding: 50px;
+				padding-top: 112px;
+				padding-bottom: 112px;
+				background-color: #141414;
+				width:50%;
+				font-size: 50px;
+				text-align: center;
+				color: white;
+				font-family: helvetica; 
+			}
+
+			/*class selector for the text styles*/
+			.text2 {
+				float: left;
+				padding: 50px;
+				padding-top: 135px;
+				padding-bottom: 140px;
+				background-color: #141414;
+				width:50%;
+				font-size: 50px;
+				text-align: center;
+				color: white;
+				font-family: helvetica; 
+			}
+
+			/*class selector with specific element for the paragraph styles*/
+			.tp p{
+				font-size: 50px;
+				text-align: center;
+				color: white;
+				padding: 250px;
+				font-family: helvetica; 
+
+			}
+
+			/*social media icons*/
+			.fa {
+				padding: 10px;
+				font-size: 30px;
+				width: 50px;
+				text-align: center;
+				text-decoration: none;
+				margin: 5px 2px;
+			}
+
+			/*hover effect*/
+			.fa:hover {
+				opacity: .7;
+			}
+
+			/*facebook icon*/
+			.fa-facebook {
+				background: white;
+				color: black;
+				border-radius: 15px;
+			}
+
+			/*twitter icon*/
+			.fa-twitter {
+				background: white;
+				color: black;
+				border-radius: 15px;
+			}
+
+			/*instagram icon*/
+			.fa-instagram {
+				background: white;
+				color: black;
+				border-radius: 15px;
+			}
+
+			/*pinterest icon*/
+			.fa-pinterest {
+				background: white;
+				color: black;
+				border-radius: 15px;
+			}
+
+			/*youtube icon*/
+			.fa-youtube {
+				background: white;
+				color: black;
+				border-radius: 15px;
+			}
+		</style>
+</head>
+
+
+
+<!--body tag for the placement div tags-->
+<body>
+
+	<!--header tag for the header-->
+	<header>
+		<div class="wrapper">
+			<div class="logo">
+				<a href="#"> JANSCENA'S_WEBPAGE <a>
+			</div>		
+
+			<!--nav tag for internal links-->
+				<nav>
+					<a href="#portraits">portraits</a>
+					<a href="#pi">personal info</a>
+					<a href="#interests">interests</a>
+					<a href="#hobbies">hobbies</a>
+					<a href="#ai">additional info</a>
+				</nav>
+		</div>
+	</header>
+
+	<!--break tags for line spacing-->
+	<br><br><br><br><br><br><br>
+
+	<!--div tag for the background-->
+	<div class="topbg">
+		<img src="korea1.jpg" alt="Photo" width="100%">
+	</div>
+
+		<!--div tag for the storage of contents separated from the background-->
+		<div class="content">
+			<div class="toptext">
+				<!--heading 1 tag for the highlight text-->
+				<h1>안녕하세요</h1>
+				<h6>HANZ JANSEN A. DIMAUNAHAN</h6>
+				<!--p tag for paragraph-->
+				<p>Welcome to my personal webpage. This webpage is for the intention of educational purposes only. It contains everything about my hobbies, personal information, interests and more. Feel free to navigate to know more about me.</p>
+			</div>
+
+				<!--div tag for the a portion of pictures-->
+				<div class="portion">
+
+					<!--div tag text with white bg color-->
+					<div id="portraits" class="text">
+						portraits
+					</div>
+
+						<!--div tag for pictures in a table-->
+						<div class="row">
+							<div class="collumn">
+								<!--img tag for picture-->
+								<img src="again.jpg" alt="Photo" width="100%">
+							</div>
+
+							<div class="collumn">
+								<!--img tag for picture-->
+								<img src="study.jpg" alt="Photo" width="100%">
+							</div>
+
+							<div class="collumn">
+								<!--img tag for picture-->
+								<img src="me.jpg" alt="Photo" width="100%">
+							</div>
+						</div>
+
+					<!--div tag for text in white bg color-->	
+					<div id="pi" class="text">
+						personal information
+					</div>
+
+				</div>	
+
+					<!--div tag a portion of personal information-->
+					<div class="portion">
+
+						<!--section tag for section-->
+						<section class="row">		
+							<div class="y5">
+								<!--img tag for picture-->
+								<img src="y4it1.jpg" width="100%">
+							</div>
+
+							<!--div tag for info-->
+							<div class="text1">
+									I am currently a 2nd Year college student taking up a degree in BS Information Technology. I'm fond of everything technology. I've been fascinated ever since high school.
+							</div>
+
+							<!--div tag info-->
+							<div class="text1">
+									And I am currently studying at the Laguna State Polytechnic University San Pablo
+							</div>
+						</section>
+					</div>
+
+
+					<!--div tag a portion of personal information-->
+					<div class="portion">
+						<!--section tag for section-->
+						<section class="row">		
+							<div class="y4">
+								<!--img tag for picture-->
+								<img src="predator.jpg" width="100%">
+							</div>
+
+							<!--div tag for info-->
+							<div class="text2">
+									This is my first ever Y4IT. It has been a fun experience since I get to see everything about the field that I'm currently interested on, which is technology. 
+							</div>
+
+							<!--div tag info-->
+							<div class="text2">
+									This event happened at UP Diliman.
+							</div>
+						</section>
+					</div>
+
+				<!--div tag for text in white bg color-->
+				<div id="interests" class="text">
+							interests
+				</div>
+
+						<!--div tag for text without bg color-->
+						<div class="tp">
+							<!--p tag for paragraph-->
+							<p>I really do love technology in general. I'm more into fighting games especially Tekken 7. I also enjoy making graphic design but I'm still in the learning process though.</p>
+						</div>
+
+				<!--div tag for text in white bg color-->
+				<div id="hobbies" class="text">
+							hobbies
+				</div>
+
+					<!--div tag a portion of personal information-->
+					<div class="portion">
+						<div class="row">
+							<div class="collumn">
+								<!--img tag for picture-->
+								<img src="X-01.jpg" alt="Photo" width="100%">
+							</div>
+
+							<div class="collumn">
+								<!--img tag for picture-->
+								<img src="xbox-01.jpg" alt="Photo" width="100%">
+							</div>
+
+							<div class="collumn">
+								<!--img tag for picture-->
+								<img src="city-01.jpg" alt="Photo" width="100%">
+							</div>
+						</div>	
+					</div>
+
+				<!--div tag for text in white bg color-->
+				<div id="ai" class="text">
+							additional info
+				</div>	
+
+					<!--div tag for text without bg color-->
+					<div class="tp">
+						<!--p tag for paragraph-->
+						<p>Thank you for visiting my webpage. I hope you've learned a little bit of knowledge about myself. For more not so exciting things happening with my life, below are my social media accounts. This webpage is for educational purposes.</p>
+					</div>
+
+				<!--footer tag for footer-->
+				<footer class="foot">
+					&copy; Copyright 2021 Hanz Jansen A. Dimaunahan | ITEL 203 - Web Systems and Technologies | Al John Villareal
+					<br><br>
+					<!--social media icons-->
+					<a href="https://www.facebook.com/hanzjansen515/" class="fa fa-facebook" target="_blank"></a>
+					<a href="https://twitter.com/janscena" class="fa fa-twitter" target="_blank"></a>
+					<a href="https://www.instagram.com/janscena/" class="fa fa-instagram" target="_blank"></a>
+					<a href="https://www.pinterest.ph/hanzjansen515" class="fa fa-pinterest" target="_blank"></a>
+					<a href="https://www.youtube.com/channel/UCe1fRvVM1s8ggKhGEmrOk9g/featured" class="fa fa-youtube" target="_blank"></a>
+				</footer>
+						
+		</div>
+
+</body>
+
+</html>

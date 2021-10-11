@@ -1,0 +1,320 @@
+	<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Basic Calculator</title>
+
+
+	<!--CSS-->
+
+	<style type="text/css">
+		
+		* {
+			margin: 0rem 0rem;
+			padding: 0rem 0rem;
+			font-family: consolas, arial, calibri;
+			text-align: center;
+		}
+
+		h1 {
+			font-size: 4rem;
+			color: #FFFDED;
+		}
+
+		p {
+			font-size: 2rem;
+			color: #FFFDED;
+		}
+
+		input {
+			font-size: 3rem;
+			width: 80%;
+			margin: 0 auto;
+			border-radius: 15px;
+			border: 3px solid #FCE762;
+			background-color: #201335;
+			color: #FFFDED;
+		}
+
+		button {
+			font-size: 2.5rem;
+			border-radius: 20px;
+			border: none;
+			border: 3px solid #FFB17A;
+			background-color: #201335;
+			color: #FFFDED;
+			width: 80%;
+			margin: 5%;
+		}
+
+		button:hover {
+			background-color: #FFB17A;
+			box-shadow: 0 0 30px #FFB17A;
+		}
+
+		body {
+			background-color: #201335;
+		}
+
+		.korean {
+			font-size: 7rem;
+			position: absolute;
+			left: 22.5%;
+			bottom: 68.6%;
+			animation: text 1s 1;
+			text-align: center;
+		}
+
+		#num1:hover, #num2:hover {
+			box-shadow: 0 0 30px #FCE762;
+		}
+
+		.container {
+
+			width: 80rem;
+			margin: 5.1rem auto;
+		}
+
+		.calculator {
+			width: 43%;
+			margin: auto 2%;
+			float: left;
+			border: 5px solid #4F4789;
+			border-radius: 50px;
+			padding: 3% 1%;
+		}
+
+		.text {
+			width: 35%;
+			float: left;
+			padding: 14.5% 3% 3%;
+			margin: 1% 4%;
+			position: relative;
+		}
+
+		.text1 {
+			animation: appear 3s;
+		}
+
+		.input {
+			width: 60%;
+			float: left;
+			margin-left: 8%;
+		}
+
+		.buttons {
+			width: 20%;
+			float: left;
+		}
+
+		@keyframes text {
+			0% {
+				font-size: 7rem;
+				left: -50.5%;
+			}
+
+			20% {
+				font-size: 7rem;
+				left: 30%;
+			}
+
+			35% {
+				font-size: 7rem;
+				left: 18.5%;
+			}
+
+			50% {
+				font-size: 7rem;
+				left: 23.5%;
+			}
+
+			100% {
+				font-size: 7rem;
+				left: 22.5%;
+			}
+
+		}
+
+		@keyframes appear {
+			
+			0% {
+				color: #201335;
+			}
+
+			30% {
+				color: #201335;
+			}
+
+			80% {
+				color: #FFFDED;
+			}
+		}
+
+	</style>
+
+
+
+
+
+	<!--JAVASCRIPT-->
+
+	<script type="text/javascript" >
+		
+		/*function for addition operation*/		
+		function add () {
+			
+			var num1 = document.getElementById('num1').value; /*storing the element num1 to a variable*/
+			var num2 = document.getElementById('num2').value; /*storing the element num2 to a variable*/
+			result = parseInt(num1) + parseInt(num2);  /*converting the string typed on the textbox as number*/
+
+				/*alert for no input values*/
+				if (num1 == 0 && num2 == 0) {
+					alert('Input any value!');
+				}
+
+				/*alert for input integer values only*/
+				else if (isNaN(result)) {
+					alert('Input integer values only!');
+				}
+
+				/*display result*/
+				else {
+					document.getElementById("output").value = result; 
+				}
+
+		}
+
+		/*function for subtraction operation*/
+		function sub () {
+					
+			var num1 = document.getElementById('num1').value;
+			var num2 = document.getElementById('num2').value;
+			var result = parseInt(num1) - parseInt(num2);
+
+				if (num1 == 0 && num2 == 0) {
+						alert('Input any value!');
+				}
+
+				else if (isNaN(result)) {
+					alert('Input integer values only!');
+				}
+
+				else {
+					document.getElementById("output").value = result;
+				}
+		}
+
+		/*function for multiplication operation*/
+		function mul () {
+					
+			var num1 = document.getElementById('num1').value;
+			var num2 = document.getElementById('num2').value;
+			var result = parseInt(num1) * parseInt(num2);
+
+				if (num1 == 0 && num2 == 0) {
+					alert('Input any value!');
+				}
+
+				else if (isNaN(result)) {
+					alert('Input integer values only!');
+				}
+
+				else {
+					document.getElementById("output").value = result;
+				}
+		}
+
+		/*function for multiplication operation*/
+		function div () {
+					
+			var num1 = document.getElementById('num1').value;
+			var num2 = document.getElementById('num2').value;
+			var result = parseInt(num1) / parseInt(num2);
+
+				if (num1 == 0 && num2 == 0) {
+					alert('Input any value!');
+				}
+
+				else if (isNaN(result)) {
+					alert('Input integer values only!');
+				}
+
+				else {
+					document.getElementById("output").value = result;
+				}
+		}
+
+		/*function for clearing values*/
+		function remove() {
+			
+			var num1 = document.getElementById('num1').value;
+			var num2 = document.getElementById('num2').value;
+			var result = parseInt(num1) / parseInt(num2);
+
+			/*alert for no input values to erase*/
+			if (num1 == 0 && num2 == 0) {
+				alert('No input value to erase!');
+			}
+
+			/*replacing values on the text field with spaces*/
+			else {
+				document.getElementById('num1').value = '';
+				document.getElementById('num2').value = '';
+				document.getElementById('output').value = '';
+			}
+		}
+
+	</script>
+
+</head>
+
+
+
+<body>
+	
+	<section>
+		<div class="container">
+			
+			<div class="text">
+					<h1 class="korean">안녕!</h1>
+
+					<br><br><br>
+
+					<p class="text1">Welcome to my basic calculator. To get started, simply input two integers on the first two text fields. Afterwards, click on an operation you want to execute.</p>	
+			</div>
+
+			<span></span>
+			<div class="calculator">
+					<h1>Basic Calculator</h1>
+
+					<br><br>
+
+						<div class="input">
+							<br>
+								<input id="num1" type="text">
+
+							<br><br>  
+							
+								<input id="num2" type="text">
+
+							<br><br><br><br><br>
+
+								<input type="text" id="output" readonly="text"> 
+
+							<br><br>
+						</div>
+
+						<div class="buttons">
+							<button onclick="add()" id="add"> + </button><br>
+							<button onclick="sub()" id="sub"> - </button><br>
+							<button onclick="mul()" id=mul> * </button><br>
+							<button onclick="div()" id="div"> / </button><br>
+							<button onclick="remove()" id="clear"> AC </button>
+						</div>
+			</div>
+			</span>
+		</div>
+	</section>	
+		
+</body>
+</html>
