@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<title>Product Article</title>
+
+	<style type="text/css">
+		
+		* {
+			margin: 0rem;
+		}
+
+		header {
+			font-family: consolas;
+			width: 100%;
+			position: fixed;
+			z-index: 12;
+			box-shadow: 0 0 10px black;
+			background: black
+		}
+
+		.name {
+			float: left;
+			line-height: 100%;
+			font-size: 20px;
+			padding: 20px;
+			color: white;
+		}
+
+		nav {
+			float: right;
+		}
+
+		ul {
+			list-style: none;
+			margin: 0;
+			padding: 0;
+		}
+
+		li {
+			float: left;
+		}
+
+		li a {
+			text-decoration: none;
+			display: block;
+			color: white;
+			padding: 20px;
+			font-size: 20px;
+		}
+
+		a:hover {
+			background-color: white;
+			color: black;
+		}
+
+		body {
+			background-color: #29274C;
+		}
+
+		.page-container {
+		  position: relative;
+		  min-height: 100vh;
+		}
+
+		.content-wrap {
+		  padding-bottom: 5rem;    /* Footer height */
+		}
+
+		.container {
+			width: 80rem;
+			margin: 0 auto 7rem;
+			padding: 1rem;
+		}
+
+
+		/*-------------------------------------------------------------------------------*/
+
+
+		.label {
+			position: absolute;
+			top: 220px;
+  			left: 120px;
+  			font-family: sf pro display;
+  			font-size: 95px;
+  			color: white;
+		}
+
+		.text1 {
+			float: left;
+			width: 40%;
+			margin: 1rem;
+			color: white;
+			font-family: arial black;
+			font-size: 70px;
+		}
+
+		.text1 p {
+			font-family: arial;
+			font-size: 30px;
+		}
+
+		.pic1 {
+			float: left;
+			width: 48%;
+			margin: 1rem 1rem 1rem 5rem;
+
+		}
+
+		.text2 {
+			float: left;
+			width: 40%;
+			margin: 1rem;
+			color: white;
+			font-family: arial black;
+			font-size: 55px;
+		}
+
+		.text2 p {
+			font-family: arial;
+			font-size: 30px;
+		}
+
+		.pic2 {
+			float: left;
+			width: 48%;
+			margin: 1rem 5rem 1rem 1rem;
+
+		}
+
+		.text3 {
+			font-size: 90px;
+			font-family: arial black;
+			color: white;
+			text-align: center;
+		}
+
+		.text3 p {
+			font-size: 30px;
+			font-family: arial;
+			margin: 5rem 5rem 1rem;
+		}
+
+		.gif {
+			float: left;
+			width: 40%;
+			margin: 60px 60px 20px;
+		}
+
+		.gif p {
+			color: white;
+			text-align: center;
+			font-family: consolas;
+			font-size: 20px;
+			margin: 3rem;
+		}
+
+
+
+		/*-------------------------------------------------------------------------------*/
+
+		th, td {
+			font-family: arial;
+			color: white;
+			border-top: 5px solid;
+			border-bottom: 5px solid;
+			padding: 20px 20px 20px 50px;
+		}
+
+		th {
+			background-color: #E87461;
+			font-size: 30px;
+		}
+
+		table {
+			background-color: #0B132B;
+			border-collapse: collapse;
+			font-size: 20px;
+			text-align: center;
+			box-shadow: 0 0 30px black;
+		}
+
+
+
+
+
+		/*-------------------------------------------------------------------------------*/
+
+
+
+		footer {
+			background-color: #232020;
+			color: white;
+			font-size: 15px;
+			font-family: consolas;
+			padding: 20px 0 0;	
+			position: absolute;
+			bottom: 0;
+			width: 100%;
+			height: 4.5rem;
+			box-shadow: 0 0 5px black;
+			background: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)); 
+		}
+
+		.border-white {
+			border: 2px solid white;
+		}
+
+		.fa {
+			padding: 10px;
+			font-size: 20px;
+			width: 40px;
+			text-align: center;
+			text-decoration: none;
+			margin: 5px 2px;
+		}
+
+		.fa:hover {
+			background-color: black;
+			color: white;
+		}
+
+			
+		.fa-facebook {
+			background: white;
+			color: black;
+			border-radius: 15px;
+		}
+
+		
+		.fa-twitter {
+			background: white;
+			color: black;
+			border-radius: 15px;
+		}
+
+		
+		.fa-instagram {
+			background: white;
+			color: black;
+			border-radius: 15px;
+		}
+
+		.fa-pinterest {
+			background: white;
+			color: black;
+			border-radius: 15px;
+		}
+
+		
+		.fa-youtube {
+			background: white;
+			color: black;
+			border-radius: 15px;
+		}
+
+		.clear-fix {
+			clear: both;
+			float: none;
+		}
+
+	</style>
+</head>
+
+	<header>
+		<div class="name">
+			JANSCENA'S WEBPAGE CSS | Product Article
+		</div>
+		<nav>
+			<ul>
+	  			<li><a href="#">Home</a></li>
+	  			<li><a href="#headphones">Headphones</a></li>
+	  			<li><a href="#phone">Phone</a></li>
+	  			<li><a href="#computer">Computer</a></li>
+	  			<li><a href="https://www.computerhope.com/issues/ch001798.htm">About</a></li>
+			</ul>
+		</nav>
+	</header>
+
+	<body>
+
+		<div class="page-container">
+			<div class="content-wrap">
+				<section>
+					<div class="container" style="position: relative;">
+						<img src="headphones.jpg" width="100%" style="box-shadow: 0 30px 20px black;">
+						<div class="label">
+							Listen <br> to your <br> heart.
+						</div>
+					</div>
+				</section>
+
+				<section>
+					<div class="container">
+						<div class="text1">
+							Improves <br> mood. 
+							<p><br> Studies show that listening to music can benefit overall well-being, help regulate emotions, and create happiness and relaxation in everyday life.</p>
+						</div>
+						<div class="pic1">
+							<img src="girl.jpg" width="100%" style="box-shadow: 0 30px 20px black;">
+						</div>
+
+						<div class="clear-fix"></div>
+					</div>
+				</section>
+
+				<section>
+					<div class="container">
+						<div class="pic2" style="box-shadow: 0 30px 20px black;">
+							<img src="phone.jpg" width="100%" style="box-shadow: 0 30px 20px black;">
+						</div>
+
+						<div class="text2">
+							Communication.
+							<p><br>Mobile phones provide the means to communicate with friends, family, coworkers, and indeed most of the world's population instantly. Unlike previous communication devices, they can be on hand for the caller at all times and used in any place where there is a signal.</p>
+						</div>
+
+						<div class="clear-fix"></div>
+					</div>
+				</section>
+
+				<section>
+					<div class="container">
+						<img src="mac.jpg" width="100%" style="box-shadow: 0 30px 20px black;">
+					</div>
+				</section>
+
+				<section>
+					<div class="container">
+						<div class="text3">
+							What's a computer?
+							<p>Although there are disadvantages to using a computer, we believe the advantages greatly outweigh them. Below is a list of the main advantages and benefits users get from using computers.</p>
+						</div>
+					</div>
+				</section>
+
+				<section>
+					<div class="container">
+						<table>
+							<tr>
+								<th>Advantage</th>
+								<th>Description</th>
+							</tr>
+							<tr>
+								<td>Increase your productivity</td>
+								<td>Computers increase your productivity and, with a good understanding of the software running on them, you become more productive at everything you do. For example, once you have a basic understanding of using a word processor, you can create, store, edit, share, and print documents and letters. Each of these tasks were either impossible or slower with all pre-existing technologies.</td>
+							</tr>
+							<tr>
+								<td>Connects you to the Internet</td>
+								<td>Connecting a computer to the Internet unlocks its full potential. Once connected, your choices and available options, as far as information goes, are almost limitless. Many of the benefits listed on this page pertain to a computer connected to the Internet.</td>
+							</tr>
+							<tr>
+								<td>Can store vast amounts of information and reduce waste</td>
+								<td>Computers are capable of storing and accessing vast amounts of information. For example, a computer and devices like eBook readers can store hundreds or thousands of books, given enough storage capacity. By storing books, documents, movies, pictures, and songs digitally, you can quickly find what you need with a search and share information between devices. It eliminates the need for paper used to make non-digital versions of the media.</td>
+							</tr>
+							<tr>
+								<td>Can make you money</td>
+								<td>When connected to the Internet, a computer could help you make money in many different ways. For example, it's cheaper to create and run an online store than to have a physical store. Also, once online, your store or product has a global audience, and you could sell to anyone in the world.</td>
+							</tr>
+							<tr>
+								<td>Improves your abilities</td>
+								<td>Are you not the best speller, have poor grammar, not great at math, don't have a great memory, or need help with something else? Using a computer improves all your abilities, or if you have a hard time learning, you can rely on the computer as an assistant.</td>
+							</tr>
+						</table>
+					</div>
+				</section>
+
+				<section>
+					<div class="container">
+						<img src="bg.jpg" width="100%" style="box-shadow: 0 30px 20px black;">
+					</div>
+				</section>
+
+				<section>
+					<div class="container">
+						<div class="gif">
+							<img src="study.gif" width="100%" style="box-shadow: 0 30px 20px black;">
+							<p><i>(Keep studying!)</i></p>
+						</div>
+
+						<div class="gif">
+							<img src="jake.gif" width="100%" style="box-shadow: 0 30px 20px black;">
+							<p><i>(Have some chill time!)</i></p>
+						</div>
+
+						<div class="clear-fix"></div>
+
+					</div>
+				</section>
+
+			</div>
+
+			<footer>
+				<div style="width: 60%;float: left;padding: 15px 15px 15px 50px;">
+					&copy; Copyright 2021 Hanz Jansen A. Dimaunahan | ITEL 203 - Web Systems and Technologies | Al John Villareal
+				</div>
+				<div style="width: 25%;float: right;">
+					<a href="https://www.facebook.com/hanzjansen515/" class="fa fa-facebook" target="_blank"></a>
+					<a href="https://twitter.com/janscena" class="fa fa-twitter" target="_blank"></a>
+					<a href="https://www.instagram.com/janscena/" class="fa fa-instagram" target="_blank"></a>
+					<a href="https://www.pinterest.ph/hanzjansen515" class="fa fa-pinterest" target="_blank"></a>
+					<a href="https://www.youtube.com/channel/UCe1fRvVM1s8ggKhGEmrOk9g/featured" class="fa fa-youtube" target="_blank"></a>
+				</div>
+			</footer>
+		</div>
+
+	</body>
+
+</html>
