@@ -1,0 +1,534 @@
+		
+		/*CSS for all*/
+
+		* {
+			margin: 0 0;
+			padding: 0 0;
+			font-family: Arial, Helvetica, Calibri;
+		}
+
+		html {
+			scroll-behavior: smooth;
+		}
+
+		.border {
+			border: 2px solid black;
+		}
+
+		.container {
+			width: 80%;
+			margin: 0 auto;
+			padding: 1%;
+		}
+
+		.img-responsive {
+			width: 180%;
+		}
+
+		.text-right {
+			text-align: right;
+		}
+
+		.text-center {
+			text-align: center;
+		}
+
+		.text-left {
+			text-align: left;
+		}
+
+		.text-justify {
+			text-align: justify;
+		}
+
+		.text-white {
+			color: white;
+		}
+
+		.clear-fix {
+			clear: both;
+			float: none;
+		}
+
+		a {
+			color: #272838;
+			text-decoration: none;
+			font-size: 1.1rem;
+		}
+
+		a:hover {
+			color: #696773;
+		}
+
+		.btn {
+			padding: 1%;
+			border: none;
+			font-size: 1.2rem;
+			border-radius: 5px;
+		}
+
+		.btn-primary {
+			background-color: #464655;
+			color: #ffff;
+			cursor: pointer;
+		}
+
+		.btn-primary:hover {
+			background-color: #B7B6C1;
+			color: white;
+		}
+
+		h2 {
+			color: #FFFCF9;
+			font-size: 3rem;
+		}
+
+		h3 {
+			color: #363946;
+			font-size: 2rem;
+		}
+
+		h4 {
+			font-size: 1.5rem;
+		}
+
+		.float-container {
+			position: relative;
+		}
+
+		.float-text {
+			position: absolute;
+			text-shadow: 0 0 10px black;
+		}
+
+		.img-curve {
+			border-radius: 10px;
+		}
+
+		.socials, .footer {
+			background-color: #FFFCF9;
+		}
+
+		header {
+			position: fixed;
+			z-index: 12;
+			width: 100%;
+			background-color: #FFFCF9;
+			box-shadow: 0 0 30px black;
+		}
+
+
+
+
+
+
+
+		/*CSS for Navigation Bar section*/
+
+		.logo {
+			width: 10%;
+			float: left;
+		}
+
+		.menu {
+			line-height: 70px;
+		}
+
+		.menu ul {
+			list-style: none;
+		}
+
+		.menu ul li {
+			display: inline;
+			padding: 1%;
+			font-weight: bold;
+			color: #464655;
+		}
+
+
+
+
+
+
+
+		/*CSS for Food Search section*/
+
+		.food-search {
+			animation: bg 40s infinite;
+			background-size: cover;
+			background-repeat: no-repeat;
+			background-position: center;
+			padding: 10% 0;
+		}
+
+		.food-search input[type="search"] {
+			width: 50%;
+			padding: 1%;
+			font-size: 1.2rem;
+			border: none;
+			border-radius: 5px;
+			margin-left: 30%;
+			box-shadow: 0 0 30px black;
+		}
+
+		.food-order {
+			background-image: url(pics/bg.jpg);
+			background-size: cover;
+			background-repeat: no-repeat;
+			background-position: center;
+			padding: 10% 0;
+		}
+
+		.food-placed {
+			background-image: url(pics/bg3.jpg);
+			background-size: cover;
+			background-repeat: no-repeat;
+			background-position: center;
+			padding: 10% 0;
+		}
+
+		@keyframes bg {
+
+			0% {
+				background-image: url(pics/bg2.jpg);
+			}
+
+			20% {
+				background-image: url(pics/bg2.jpg);
+
+			}
+
+			30% {
+				background-image: url(pics/bg.jpg);
+			}
+
+			40% {
+				background-image: url(pics/bg.jpg);
+
+			}
+
+			50% {
+				background-image: url(pics/bg3.jpg);
+			}
+
+			60% {
+				background-image: url(pics/bg3.jpg);
+
+			}
+
+			70% {
+				background-image: url(pics/bg.jpg);
+			}
+
+			80% {
+				background-image: url(pics/bg.jpg);
+
+			}
+
+			90% {
+				background-image: url(pics/bg2.jpg);
+			}
+
+			100% {
+				background-image: url(pics/bg2.jpg);
+
+			}
+		}
+
+
+
+
+
+
+
+		/*CSS for icons*/
+		.container1 {
+			width: 35%;
+			margin: 5% auto 0;
+			padding: 1%;
+			background-color: white;
+			border-radius: 70px;
+			box-shadow: 0 0 80px black;
+		}
+
+		.icon-con {
+			width: 30%;
+			float: left;
+			margin: 1.5%;
+		}
+
+		.icon-con:hover {
+			background-color: rgb(39, 40, 56, .1);
+			border-radius: 50px;
+		}
+
+
+
+
+
+
+		/*CSS for Categories section*/
+
+		.categories {
+			padding: 6% 0;
+			background-color: #FFFCF9;
+			box-shadow: 0 0 30px black;
+		}
+
+		.box-3 {
+			width: 29.1%;
+			float: left;
+			margin: 2%;
+		}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		/*CSS for Food Menu section*/
+
+		.food-menu {
+			background-image: url(pics/bg.jpg);
+			background-size: cover;
+			background-repeat: no-repeat;
+			background-position: center;
+			padding: 6% 0;
+		}
+
+		.food-menu-box {
+			width: 43%;
+			float: left;
+			margin: 2%;
+			padding: 1%;
+			background-color: #FFFCF9;
+			border-radius: 15px;
+			box-shadow: 0 0 30px black;
+		}
+
+		.food-menu-img {
+			width: 15%;
+			float: left;
+		}
+
+		.food-menu-desc {
+			width: 70%;
+			float: left;
+			margin: 3% 0 0 14%
+		}
+
+		.food-menu-price {
+			font-size: 1.2rem;
+			margin: 2% 0;
+		}
+
+		.food-menu-detail {
+			font-size: .9rem;
+			color: #B7B6C1;
+		}
+
+		.s {
+			background-color: #6EA5D8;
+			font-size: 1rem;
+			color: white;
+			padding: 1% 2%;
+			border-radius: 5px;
+			float: right;
+		}
+
+		.p {
+			background-color: #08D9D2;
+			font-size: 1rem;
+			color: white;
+			padding: 1% 2%;
+			border-radius: 5px;
+			float: right;
+		}
+
+		.d {
+			background-color: #8B6ADC;
+			font-size: 1rem;
+			color: white;
+			padding: 1% 2%;
+			border-radius: 5px;
+			float: right;
+		}
+
+
+
+
+
+
+
+
+
+
+
+		/*CSS for Banner Section*/
+		.banner h1 {
+			padding: 20%;
+			font-size: 4rem;
+		}
+
+		.pic {
+			float: left;
+			width: 45.50%;
+			margin: 2%;
+		}
+
+
+
+
+
+
+
+
+
+		/*CSS for Comment Section*/
+		.comment{
+		}
+
+		.pics {
+			float: left;
+			width: 10.33%;
+		}
+
+
+
+
+
+
+
+
+
+
+
+
+
+		/*CSS for Socials section*/
+
+		#socials {
+			padding-bottom: 7%;
+		}
+
+		.socials ul {
+			list-style-type: none;
+		}
+
+		.socials  ul li {
+			display: inline;
+			padding: 1%;
+		}
+
+		.float-left {
+			float: left;
+			width: 23.5%;
+		}
+
+		.float-mid {
+			float: left;
+			width: 38.5%;
+			line-height: 1.4;
+			padding: .8%;
+		}
+
+		.left {
+			float: left;
+			width: 35%;
+		}
+
+
+
+
+
+		/*CSS for Footer section*/
+
+		.footer {
+			padding: 2%;
+			line-height: 1.45;
+			color: #464655;
+			box-shadow: 0 0 30px black;
+		}
+
+		.about {
+			float: left;
+			width: 45%;
+		}
+
+		.links {
+			float: left;
+			width: 16%;
+			padding-left: 11.2%;
+		}
+
+		.info {
+			color: #B7B6C1;
+			padding-right: 5%;
+			font-size: .8rem;
+
+		}
+
+
+
+
+
+		/*CSS for Order Page */
+
+		.order-text {
+			font-size: 2.5rem;
+		}
+
+		.order-box {
+			border: 1px solid white;
+			width: 55%;
+			padding: 1%;
+			margin: 0 21%;
+			float: left;
+			background-color: white;
+			border-radius: 20px;
+			box-shadow: 0 0 30px black
+		}
+
+		.order-img {
+			padding: 2%;
+			margin: 4% 1%;
+			width: 39.50%;
+			float: left;
+		}
+
+		.order-fill-up {
+			border: 1px solid white;
+			padding: 2%;
+			margin: 1%;
+			width: 46%;
+			float: left;
+			text-align: left;
+		}
+
+		.order-label {
+			margin-bottom: 1%; 
+    		font-weight: bold;
+		}
+
+		.input-responsive {
+			padding: 2%;
+			margin-top: 2%;
+			width: 100%;
+			border: none;
+			border-bottom: 2px solid #464655;
+			border-radius: 2px;
+			font-size: 1rem;
+		}
+
+		.order-summary h3 {
+			font-size: 1.5rem;
+			padding: 5% 5%;
+		}

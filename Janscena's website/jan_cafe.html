@@ -1,0 +1,389 @@
+<?php include('config/constants.php') ?>
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Janscena's Cafe</title>
+	<link rel="stylesheet" type="text/css" href="index.css">
+	<link rel="icon" href="pics/icon-01.png">
+	<script src="index.js"></script>
+</head>
+
+<body>
+		<header>
+			<!--Navigation section starts here-->
+				<section class="navbar">
+					<div class="container">
+						<div class="logo">
+							<img src="pics/Logo.png" alt="Logo" class="img-responsive">
+						</div>
+
+
+						<div class="menu text-right">
+							<ul>
+								<li>
+									<a href="index.php">Home</a>
+								</li>
+
+								<li>
+									<a href="#categories">Categories</a>
+								</li>
+
+								<li>
+									<a href="#explore">Foods</a>
+								</li>
+
+								<li>
+									<a href="#socials">Contact</a>
+								</li>
+							</ul>
+						</div>
+
+						<div class="clear-fix"></div>
+					</div>
+				</section>
+			<!--Navigation section ends here-->
+		</header>	
+
+
+
+	<!--Food Search section starts here-->
+
+		<section class="food-search text-center">
+			<div class="container">
+				<br><br><br><br>
+				<div style="width: 40%; float: left; margin-left: 5%;">
+					<h2>A place where you can enjoy food while at home.</h2>
+				</div>
+				<br><br><br>
+
+				<div style="width: 50%; float: left;">
+					<form>
+						<input type="search" name="search" placeholder="Search for Food...">
+						<input type="submit" name="submit" value="Search" class="btn btn-primary">
+					</form>
+				</div>
+
+				<div class="clear-fix"></div>
+
+			</div>
+<br>
+
+			<div class="container1">
+				<div class="icon-con">
+					<img src="pics/search_bl.png" width="100">
+				</div>
+
+				<div class="icon-con">
+					<img src="pics/order_bl.png" width="100">
+				</div>
+
+				<div class="icon-con">
+					<img src="pics/deliver_bl.png" width="100">
+				</div>
+
+				<div class="clear-fix"></div>
+
+			</div>
+		</section>
+	<!--Food Search section ends here-->
+
+
+	<div id="categories"></div>
+
+
+	<!--Categories section starts here-->
+		<section class="categories">
+			<div class="container">
+				<h2 class="text-center" style="color: #272838;">Categories</h2>
+
+				<div class="box-3 float-container">
+					<img src="pics/sandwiches.jpg" alt="Sandwiches" width="100%" class="img-curve img-shadow">
+
+					<h3 class="float-text text-white" style="left: 20%; bottom: 48%;">SANDWICHES</h3>
+				</div>
+
+				<div class="box-3 float-container"> 
+					<img src="pics/pastries.jpg" alt="Pastries" width="100%" class="img-curve img-shadow">
+
+					<h3 class="float-text text-white" style="left: 27%; bottom: 48%;">PASTRIES</h3>
+				</div>
+
+
+				<div class="box-3 float-container">
+					<img src="pics/drinks1.jpg" alt="Drinks" width="100%" class="img-curve img-shadow">
+
+					<h3 class="float-text text-white" style="left: 31.5%; bottom: 48%;">DRINKS</h3>
+				</div>
+
+
+				<div class="clear-fix"></div>
+
+
+			</div>
+		</section>
+	<!--Categories section ends here-->
+
+
+	<div id="explore"></div>
+
+
+	<!--Food Menu section starts here-->
+		<section class="food-menu"> 
+			<div class="container">
+				<h2 class="text-center">Explore Foods</h2>
+
+
+				<div class="food-menu-box">
+					<div class="food-menu-img">
+						<img src="pics/club.jpg" alt="Clubhouse" width="150%" class="img-curve">
+					</div>
+
+					<div class="food-menu-desc">
+						<h4>Clubhouse <span class="s">S</span></h4>
+						<p class="food-menu-price">&#8369 235.00 <i>/ 2 pcs.</i></p>
+						<p class="food-menu-detail">Made with Cheese, Bacon, Ham, Turkey, a Toast, and organize vegetables.</p>
+						<br>
+						<a href="<?php echo SITEURL; ?>order1.php" class="btn btn-primary">Order Now</a>
+						
+					</div>
+
+				</div>
+
+
+				<div class="food-menu-box">
+					<div class="food-menu-img">
+						<img src="pics/croissant.jpg" alt="Croissant" width="150%" class="img-curve">
+					</div>
+
+					<div class="food-menu-desc">
+						<h4>Croissant <span class="p">P</span></h4>
+						<p class="food-menu-price">&#8369 115.00 <i>/ 3 pcs.</i></p>
+						<p class="food-menu-detail">A buttery, flaky, and viennoiserie pastry from simple yet amazing ingredients.</p>
+						<br>
+						<a href="<?php echo SITEURL; ?>order2.php" class="btn btn-primary">Order Now</a>
+					</div>
+
+				</div>
+
+
+				<div class="food-menu-box">
+					<div class="food-menu-img">
+						<img src="pics/affogato.png" alt="Affogato" width="150%" class="img-curve">
+					</div>
+
+					<div class="food-menu-desc">
+						<h4>Affogato <span class="d">D</span></h4>
+						<p class="food-menu-price">&#8369 257.00</p>
+						<p class="food-menu-detail">A classic beverage with a scoop of vanilla ice cream  for a creamy and rich treat.</p>
+						<br>
+						<a href="<?php echo SITEURL; ?>order3.php" class="btn btn-primary">Order Now</a>
+					</div>
+
+				</div>
+
+
+				<div class="food-menu-box">
+					<div class="food-menu-img">
+						<img src="pics/frappe.jpg" alt="Frappuccino" width="150%" class="img-curve">
+					</div>
+
+					<div class="food-menu-desc">
+						<h4>Frappuccino <span class="d">D</span></h4>
+						<p class="food-menu-price">&#8369 170.00</p>
+						<p class="food-menu-detail">If you're a sweet tooth like us, try our amazing Frappuccino. Indulge the sweetness.</p>
+						<br>
+						<a href="<?php echo SITEURL; ?>order4.php" class="btn btn-primary">Order Now</a>
+					</div>
+
+				</div>
+
+
+				<div class="food-menu-box">
+					<div class="food-menu-img">
+						<img src="pics/bagel.jpg" alt="Bagel" width="150%" class="img-curve">
+					</div>
+
+					<div class="food-menu-desc">
+						<h4>Bagel <span class="p">P</span></h4>
+						<p class="food-menu-price">&#8369 135.00 <i>/ 3 pcs.</i></p>
+						<p class="food-menu-detail">A traditional Jewish roll shaped like a doughnut, toasted, spread with butter and cream cheese.</p>
+						<br>
+						<a href="<?php echo SITEURL; ?>order5.php" class="btn btn-primary">Order Now</a>
+					</div>
+
+				</div>
+
+
+				<div class="food-menu-box">
+					<div class="food-menu-img">
+						<img src="pics/panini.jpg" alt="Panini" width="150%" class="img-curve">
+					</div>
+
+					<div class="food-menu-desc">
+						<h4>Panini <span class="s">S</span></h4>
+						<p class="food-menu-price">&#8369 190.00 <i>/ 2 pcs.</i></p>
+						<p class="food-menu-detail">Sourdough bread, butter, cheddar cheese, dijon mustard, whole grain. Perfect filling your stomach.</p>
+						<br>
+						<a href="<?php echo SITEURL; ?>order6.php" class="btn btn-primary">Order Now</a>
+					</div>
+				</div>
+
+
+				<div class="clear-fix"></div>
+			</div>
+		</section>
+	<!--Food Menu section ends here-->
+	<!-- Comment section starts here -->
+		<section class="comment">
+			<div class="container">
+				<div class="pic text-center">
+					<h1>Want to burn some extra calories?</h1><br>
+					<i>(I hope you're in shape.)</i>
+				</div>
+
+				<div class="pic text-center">
+					<img src="pics/fire.gif" width="100%">
+				</div>
+
+				<div class="pic text-center">
+					<img src="pics/heart.gif" width="100%">
+				</div>	
+
+				<div class="pic pic1 text-center">
+					<p>Leave me a comment.</p><br>
+					 <i>(I can read them really.)</i>
+
+					<form name="comment" action="" method="POST" class="cm"><br>
+						<input type="text" name="com" placeholder="Let me know what you think!" required=""><br><br><br>
+						<input type="submit" name="submit" class="btn btn-primary" value="Comment">
+					</form>
+
+				</div>	
+
+				<div class="clear-fix"></div>
+			</div>
+		</section>
+	<!-- Comment section ends here -->
+
+
+		<?php include('comment.php') ?>
+
+
+	<!-- Banner Section Starts Here-->
+		<section class="banner">
+
+				<div class="pics text-center">
+					<img src="pics/bagel.jpg" width="100%">
+				</div>
+
+				<div class="pics text-center">
+					<img src="pics/pastries.jpg" width="100%">
+				</div>
+
+				<div class="pics text-center">
+					<img src="pics/veggie.jpg" width="100%">
+				</div>
+
+				<div class="pics text-center">
+					<img src="pics/club.jpg" width="100%">
+				</div>
+
+				<div class="pics text-center">
+					<img src="pics/drinks1.jpg" width="100%">
+				</div>
+
+				<div class="pics text-center">
+					<img src="pics/grilled.jpg" width="100%">
+				</div>
+
+
+				<div class="clear-fix"></div>
+		</section>
+
+	<!-- Banner Section Ends here -->
+
+
+
+
+	<!--Footer section starts here-->
+		<section class="footer">
+			<div class="container text-left">
+				
+				<div class="about">
+					<b>ABOUT</b>
+					<p class="info text-left"><br>
+						Welcome to Janscena's Cafe. A place where you can order food while at the comfort of your home. This website is for the intention of educational purposes only and is not an actual food delivery website. All information presented are not for the act of plagiarism. This website is given to Prof. Aljohn Villareal for the completion of student Hanz Jansen A. Dimaunahan's final requirement. Currently finishing the 2nd Semester as a 2nd Year BS INFO college student at The Laguna State Polytechnic University - San Pablo. 
+					</p>
+				</div>
+
+				<div class="links">
+					<b>CATEGORIES</b>
+					<p class="info"><br>
+						Home<br>
+						Categories<br>
+						Foods<br>
+						Contact<br>
+						Food Delivery<br>
+						Final Requirement<br>
+					</p>
+				</div>
+
+				<div class="links">
+					<b>QUICK LINKS</b>
+					<p class="info"><br>
+						About Us<br>
+						Contact Us<br>
+						Contribution<br>
+						Privacy Policy<br>
+						Janscena's Cafe<br>
+						감사합니다<br>
+					</p>
+				</div>
+
+				<div class="clear-fix"></div>
+
+			</div>
+		</section>
+	<!--Footer section ends here-->
+
+
+
+	<!--Socials section starts here-->
+		<section class="socials ">
+			<div class="container" id="socials">
+				
+				<div class="float-left text-left logo">
+					<img src="pics/Logo.png" alt="Logo" width="65%">
+				</div>
+				
+				<div class="float-mid text-left">
+					<p class="info">
+						&copy; Copyright 2021 Hanz Jansen A. Dimaunahan | ITEL 203 - Web Systems and Technologies | Al John Villareal
+					</p>
+				</div>
+
+				<div class="left text-right">
+					<ul>
+						<li>
+							<a href=""><img src="https://img.icons8.com/ios-filled/50/000000/facebook-new.png"/></a>
+						</li>
+
+						<li>
+							<a href=""><img src="https://img.icons8.com/ios-filled/50/000000/twitter.png"/></a>
+						</li>
+
+						<li>
+							<a href=""><img src="https://img.icons8.com/ios-filled/50/000000/instagram-new.png"/></a>
+						</li>
+					</ul>
+				</div>
+				
+			</div>
+		</section>
+	<!--Socials section ends here-->
+
+</body>
+</html>
